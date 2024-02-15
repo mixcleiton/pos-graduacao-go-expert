@@ -50,7 +50,7 @@ func main() {
 		panic(err)
 	}
 	tmp := template.New("cotacao.txt")
-	tmp, _ = tmp.Parse("Dolar: {{.Bid}}")
+	tmp, _ = tmp.Parse("Dólar: {{.Bid}}")
 	err = tmp.Execute(file, &quotation)
 	if err != nil {
 		panic(err)
